@@ -45,7 +45,7 @@ RUN echo -e ". /opt/rh/sclo-git25/enable\n. /opt/rh/devtoolset-8/enable\n" >> /h
 RUN sed -i -e 's/\*__block/\*__libc_block/g' /usr/include/unistd.h
 
 ARG SWIFT_PLATFORM=centos7
-ARG SWIFT_VERSION=5.8.1
+ARG SWIFT_VERSION=5.9.2
 ARG SWIFT_BRANCH=swift-${SWIFT_VERSION}-release
 ARG SWIFT_TAG=swift-${SWIFT_VERSION}-RELEASE
 ARG SWIFT_WEBROOT=https://download.swift.org

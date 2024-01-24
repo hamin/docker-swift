@@ -34,7 +34,7 @@ RUN apt-get -y update && apt-get -y install \
   zip
 
 ARG SWIFT_PLATFORM=ubuntu22.04
-ARG SWIFT_VERSION=5.8.1
+ARG SWIFT_VERSION=5.9.2
 ARG SWIFT_BRANCH=swift-${SWIFT_VERSION}-release
 ARG SWIFT_TAG=swift-${SWIFT_VERSION}-RELEASE
 ARG SWIFT_WEBROOT=https://download.swift.org
