@@ -2,8 +2,10 @@ FROM node:14.17.4
 
 ARG SWIFT_DOCC_RENDER_BRANCH=main
 
-RUN groupadd -g 998 build-user && \
-    useradd -m -r -u 998 -g build-user build-user
+ARG BUILD_USER_ID=998
+
+RUN groupadd -g ${BUILD_USER_ID} build-user && \
+    useradd -m -r -u ${BUILD_USER_ID} -g build-user build-user
 
 USER build-user
 
