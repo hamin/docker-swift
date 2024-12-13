@@ -2,8 +2,10 @@ FROM amazonlinux:2
 
 RUN yum install shadow-utils -y
 
-RUN groupadd -g 998 build-user && \
-    useradd -m -r -u 42 -g build-user build-user
+ARG BUILD_USER_ID=998
+
+RUN groupadd -g ${BUILD_USER_ID} build-user && \
+    useradd -m -r -u ${BUILD_USER_ID} -g build-user build-user
 
 # The build needs a package from the EPEL repo so that needs to be enabled.
 RUN amazon-linux-extras install epel -y
