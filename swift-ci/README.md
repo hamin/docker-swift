@@ -43,6 +43,10 @@ in `S:\SourceCache`.
 
 ### Building and Tagging the image
 
+Windows docker images must match the kernel version in the container and the
+host.  You can identify the correct version by runing the `winver` command.  The
+"OS Build" identifies the version suffix to apply to "10.0".
+
 ```powershell
 cd master\windows\10.0.19044.1706
 docker image build --compress -t swift:swiftci .

@@ -1,0 +1,13 @@
+[Setup]
+NoIcons=1
+Components=gitlfs
+EditorOption=VIM
+PathOption=Cmd
+SSHOption=OpenSSH
+TurtoiseOption=false
+CURLOption=WinSSL
+BashTerminalOption=ConHost
+PerformanceTweaksFSCache=Enabled
+EnableSymlinks=Enabled
+EnablePseudoConsoltSupport=Disabled
+EnableFSMonitor=Enabled
