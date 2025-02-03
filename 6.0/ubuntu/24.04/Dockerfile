@@ -14,6 +14,7 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && ap
     libgcc-13-dev \
     libpython3-dev \
     libsqlite3-0 \
+    libsqlite3-dev \
     libstdc++-13-dev \
     libxml2-dev \
     libncurses-dev \
